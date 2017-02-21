@@ -1,0 +1,30 @@
+
+# Eclipse
+# .classpath
+# .project
+#This one is needed by eclipse only when you have special configurations setup in eclipse for this project
+# .settings/
+
+# Intellij
+**/.idea/
+
+# For mac
+.DS_Store
+
+# Vim
+#Vim temporary files end with ~
+*~
+#Vim creates swap files that have the swp and swo extensions
+*.swp
+*.swo
+
+# Gradle projects
+.gradle/
+bin/
+build/
+gen/
+
+
+# Maven projects
+**/target/
+**/*.iml
