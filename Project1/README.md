@@ -29,18 +29,6 @@ mvn package
 mvn exec:java -Dexec.mainClass="com.ayon.app.App"
 ```
 
-### Run all unit tests:
-```
-mvn test
-```
-
-### Few other maven commands:
-```
-mvn compile
-mvn clean
-```
-
-
 
 Project structure:
 ```
