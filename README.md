@@ -1,5 +1,6 @@
-# Simplest maven project
+# Simplest maven project to test Basic features of Lombok
 
+This is a single java project where I practiced lombok. You will find the example running commands in `App.java` file
 
 ## Setup for intellij
 
@@ -31,6 +32,7 @@ mvn exec:java -Dexec.mainClass="com.ayon.app.App"
 
 
 Project structure:
+```
 .
 ├── README.md
 ├── pom.xml
