@@ -31,21 +31,27 @@ mvn exec:java -Dexec.mainClass="com.ayon.app.App"
 
 
 Project structure:
-```
 .
 ├── README.md
 ├── pom.xml
 └── src
-    ├── main
-    │   └── java
-    │       └── com
-    │           └── ayon
-    │               └── app
-    │                   └── App.java
-    └── test
+    └── main
         └── java
             └── com
                 └── ayon
-                    └── app
-                        └── AppTest.java
+                    ├── app
+                    │   └── App.java
+                    └── lombok
+                        ├── ex1
+                        │   └── LombokExample.java
+                        ├── ex2
+                        │   └── LombokExample2.java
+                        ├── ex3
+                        │   └── LombokExample3.java
+                        ├── ex4
+                        │   └── LombokExample4.java
+                        ├── ex5
+                        │   └── LombokExample5.java
+                        └── ex6
+                            └── LombokExample6.java
 ```
