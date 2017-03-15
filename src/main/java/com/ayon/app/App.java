@@ -5,10 +5,11 @@ import com.ayon.lombok.ex2.LombokExample2;
 import com.ayon.lombok.ex3.LombokExample3;
 import com.ayon.lombok.ex4.LombokExample4;
 import com.ayon.lombok.ex5.LombokExample5;
+import com.ayon.lombok.ex8.LombokExample8;
 
 public class App {
     public static void main(String[] args) {
-        example4();
+        example8();
     }
 
     public static void example1 () {
@@ -51,5 +52,11 @@ public class App {
         LombokExample5 ex1 = LombokExample5.builder().isValue(true).sentence("asdf").val("asd").build();
 
         System.out.println(ex1.equals(ex1));
+    }
+
+    public static void example8 () {
+        //Now if you run this example you will be able to see logs
+        LombokExample8 ex1 = new LombokExample8();
+        ex1.tryit();
     }
 }

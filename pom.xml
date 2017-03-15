@@ -39,6 +39,20 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Logging -->
+    <!--  Using only for slf4j-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.24</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.24</version>
+    </dependency>
+
   </dependencies>
 </project>
 

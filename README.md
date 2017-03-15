@@ -2,6 +2,20 @@
 
 This is a single java project where I practiced lombok. You will find the example running commands in `App.java` file
 
+## Annotations covered:
+
+
+````
+1. @Getter
+2. @Setter
+3. @EqualsAndHashCode(of = {"sentence", "val"})
+4. @ToString(exclude = "val")
+5. @Builder
+6. @RequiredArgsConstructor, generates a constructor for all final fields, with parameter order same as field order
+7. @NoArgsConstructor creates an empty constructor.
+8. @AllArgsConstructor creates a constructor for all fields
+````
+
 ## Setup for intellij
 
 If you are using intellij, need to activate annotations processor:
