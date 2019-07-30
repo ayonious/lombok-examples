@@ -14,7 +14,6 @@ This is a single java project where I practiced lombok. You will find the exampl
 6. @RequiredArgsConstructor, generates a constructor for all final fields, with parameter order same as field order
 7. @NoArgsConstructor creates an empty constructor.
 8. @AllArgsConstructor creates a constructor for all fields
-9. @Slf4j creates a log instance
 ````
 
 ## Setup for intellij

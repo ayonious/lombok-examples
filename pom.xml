@@ -4,14 +4,14 @@
   <!-- boiler plate code for now -->
 
   <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <!-- define group artifact version of this project -->
   <groupId>com.ayon.app</groupId>
   <artifactId>my-app-1</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
   <!--  define all the dependencies -->
@@ -20,13 +20,13 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.6</version>
+      <version>1.18.8</version>
     </dependency>
 
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>19.0</version>
+      <version>28.0-jre</version>
     </dependency>
 
     <!--  define all the Test dependencies with test scope -->

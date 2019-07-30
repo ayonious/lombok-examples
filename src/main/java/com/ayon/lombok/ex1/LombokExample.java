@@ -6,7 +6,6 @@ import java.util.Map;
 import lombok.Getter;
 import lombok.Setter;
 
-
 /*
 Generate getters and setters for whole class
 */

@@ -1,21 +1,19 @@
 package com.ayon.lombok.ex8;
 
-import com.ayon.lombok.ex6.LombokExample6;
-import lombok.extern.slf4j.Slf4j;
-import lombok.val;
-
+import lombok.*;
 
 /*
-@Slf4j, will create a log instance
+
+@RequiredArgsConstructor, generates a constructor for all final fields, with parameter order same as field order
+@NoArgsConstructor creates an empty constructor.
+@AllArgsConstructor creates a constructor for all fields
+
 */
 
-
-@Slf4j
+@NoArgsConstructor
+@Getter
+@Setter
 public class LombokExample8 {
-    public void tryit () {
-        log.info("info logs testing for lombok");
-        log.warn("info logs testing for lombok");
-        log.error("info logs testing for lombok");
-    }
+    private boolean isValue;
+    private String val;
 }
-
