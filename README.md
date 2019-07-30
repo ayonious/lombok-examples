@@ -57,21 +57,22 @@ Project structure:
                 └── ayon
                     ├── app
                     │   └── App.java
-                    └── lombok
-                        ├── ex1
-                        │   └── LombokExample.java
-                        ├── ex2
-                        │   └── LombokExample2.java
-                        ├── ex3
-                        │   └── LombokExample3.java
-                        ├── ex4
-                        │   └── LombokExample4.java
-                        ├── ex5
-                        │   └── LombokExample5.java
-                        ├── ex6
-                        │   └── LombokExample6.java
-                        ├── ex7
-                        │   └── LombokExample7.java
-                        └── ex8
-                            └── LombokExample8.java
+                    ├── lombok
+                    │   ├── ex1
+                    │   │   └── LombokExample.java
+                    │   ├── ex2
+                    │   │   └── LombokExample2.java
+                    │   ├── ex3
+                    │   │   └── LombokExample3.java
+                    │   ├── ex4
+                    │   │   └── LombokExample4.java
+                    │   ├── ex5
+                    │   │   └── LombokExample5.java
+                    │   ├── ex6
+                    │   │   └── LombokExample6.java
+                    │   └── ex8
+                    │       └── LombokExample8.java
+                    └── service
+                        ├── RunningLomboks.java
+                        └── RunningLomboksTest.java
 ```
