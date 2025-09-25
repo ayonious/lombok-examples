@@ -1,4 +1,4 @@
-package com.ayon.lombok.ex8;
+package com.ayon.lombok.Example7_NoArgsConstructor;
 
 import lombok.*;
 
@@ -13,7 +13,7 @@ import lombok.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class LombokExample8 {
+public class Example7_NoArgsConstructor {
     private boolean isValue;
     private String val;
 }

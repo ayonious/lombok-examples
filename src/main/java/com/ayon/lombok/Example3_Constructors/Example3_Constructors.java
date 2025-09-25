@@ -1,8 +1,8 @@
-package com.ayon.lombok.ex5;
+package com.ayon.lombok.Example3_Constructors;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 /*
@@ -14,12 +14,12 @@ import lombok.Setter;
 */
 
 
-@Builder
+@RequiredArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class LombokExample5 {
-    private String sentence;
+public class Example3_Constructors {
+    private final String sentence;
     private boolean isValue;
     private String val;
 }

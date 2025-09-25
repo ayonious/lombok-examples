@@ -1,22 +1,22 @@
 package com.ayon.service;
 
-import com.ayon.lombok.ex1.LombokExample;
-import com.ayon.lombok.ex2.LombokExample2;
-import com.ayon.lombok.ex3.LombokExample3;
-import com.ayon.lombok.ex4.LombokExample4;
-import com.ayon.lombok.ex5.LombokExample5;
-import com.ayon.lombok.ex6.LombokExample6;
-import com.ayon.lombok.ex8.LombokExample8;
+import com.ayon.lombok.Example1_GettersSetters.Example1_GettersSetters;
+import com.ayon.lombok.Example2_AccessControl.Example2_AccessControl;
+import com.ayon.lombok.Example3_Constructors.Example3_Constructors;
+import com.ayon.lombok.Example4_EqualsHashCodeToString.Example4_EqualsHashCodeToString;
+import com.ayon.lombok.Example5_Builder.Example5_Builder;
+import com.ayon.lombok.Example6_ConstructorVariations.Example6_ConstructorVariations;
+import com.ayon.lombok.Example7_NoArgsConstructor.Example7_NoArgsConstructor;
 
 public class RunningLomboks {
     public void tryExample1 () {
-        LombokExample ex1 = new LombokExample(10,"test",false);
+        Example1_GettersSetters ex1 = new Example1_GettersSetters(10,"test",false);
         System.out.println(ex1.getSentence());
         System.out.println("Passed test example 1");
     }
 
     public void tryExample2 () {
-        LombokExample2 ex2 = new LombokExample2(10,"test",false);
+        Example2_AccessControl ex2 = new Example2_AccessControl(10,"test",false);
         ex2.setValue(true);
         System.out.println(ex2.getSentence());
 
@@ -26,26 +26,26 @@ public class RunningLomboks {
     public void tryExample3 () {
 
         //AllArgsConstructor
-        LombokExample3 ex2 = new LombokExample3("sen",true,"as");
+        Example3_Constructors ex2 = new Example3_Constructors("sen",true,"as");
 
         //RequiredArgsConstructor
-        LombokExample3 ex3 = new LombokExample3("sen");
+        Example3_Constructors ex3 = new Example3_Constructors("sen");
 
         System.out.println("Passed test example 3");
     }
 
     public void tryExample4 () {
         //AllArgsConstructor
-        LombokExample4 ex1 = new LombokExample4("sen",true,"as");
-        System.out.println(ex1); //LombokExample4(sentence=sen, isValue=true)
+        Example4_EqualsHashCodeToString ex1 = new Example4_EqualsHashCodeToString("sen",true,"as");
+        System.out.println(ex1); //Example4_EqualsHashCodeToString(sentence=sen, isValue=true)
 
         //AllArgsConstructor
-        LombokExample4 ex2 = new LombokExample4("sen",true,"as");
+        Example4_EqualsHashCodeToString ex2 = new Example4_EqualsHashCodeToString("sen",true,"as");
 
         System.out.println(ex1.equals(ex2)); //true
 
         //NoArgsConstructor
-        LombokExample4 ex3 = new LombokExample4();
+        Example4_EqualsHashCodeToString ex3 = new Example4_EqualsHashCodeToString();
         System.out.println(ex3);
 
         System.out.println("Passed test example 4");
@@ -53,29 +53,29 @@ public class RunningLomboks {
 
     public void tryExample5 () {
         //Builder
-        LombokExample5 ex1 = LombokExample5.builder().isValue(true).sentence("asdf").val("asd").build();
+        Example5_Builder ex1 = Example5_Builder.builder().isValue(true).sentence("asdf").val("asd").build();
 
         System.out.println("Passed test example 5");
     }
 
     //RequiredArgsConstructor, generates a constructor for all final fields, with parameter order same as field order
     public void tryExample6 () {
-        //Builder
-        LombokExample6 ex1 = new LombokExample6("sentence");
+        //Constructor with required fields
+        Example6_ConstructorVariations ex1 = new Example6_ConstructorVariations("sentence");
         System.out.println("Passed test example 6");
     }
 
     //RequiredArgsConstructor, generates a constructor for all final fields, with parameter order same as field order
     public void tryExample7 () {
-        //Builder
-        LombokExample6 ex1 = new LombokExample6("sentence",true, "val");
+        //AllArgsConstructor
+        Example6_ConstructorVariations ex1 = new Example6_ConstructorVariations("sentence",true, "val");
         System.out.println("Passed test example 7");
     }
 
     //NoArgsConstructor, generates a constructor without any fields
     public void tryExample8 () {
-        //Builder
-        LombokExample8 ex1 = new LombokExample8();
+        //NoArgsConstructor
+        Example7_NoArgsConstructor ex1 = new Example7_NoArgsConstructor();
         System.out.println("Passed test example 8");
     }
 }

@@ -1,4 +1,4 @@
-package com.ayon.lombok.ex6;
+package com.ayon.lombok.Example6_ConstructorVariations;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +17,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class LombokExample6 {
+public class Example6_ConstructorVariations {
     private final String sentence;
     private boolean isValue;
     private String val;

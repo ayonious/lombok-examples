@@ -1,4 +1,4 @@
-package com.ayon.lombok.ex2;
+package com.ayon.lombok.Example2_AccessControl;
 
 import java.util.Map;
 
@@ -12,7 +12,7 @@ When you dont want getters and setters for all fields
 and also maybe control access modifiers
 */
 
-public class LombokExample2 {
+public class Example2_AccessControl {
 
     @Getter
     private final String sentence;
@@ -28,7 +28,7 @@ public class LombokExample2 {
     private Map<String,String> mapString;
     private final int someVal;
 
-    public LombokExample2(int someVal, String sentence, boolean isValue) {
+    public Example2_AccessControl(int someVal, String sentence, boolean isValue) {
         this.someVal = someVal;
         this.sentence = sentence;
         this.isValue = isValue;
