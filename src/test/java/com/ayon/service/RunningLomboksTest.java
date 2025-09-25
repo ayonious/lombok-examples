@@ -1,8 +1,8 @@
 package com.ayon.service;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class RunningLomboksTest {
+class RunningLomboksTest {
 
     @Test
     public void tryExample1() {
